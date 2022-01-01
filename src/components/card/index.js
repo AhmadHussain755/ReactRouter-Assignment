@@ -1,11 +1,10 @@
 import { styles } from "./style";
-import Link from ""
 // import { Label } from "reactstrap";
 import userIcon from "../../assets/user.png";
 import emailImg from "../../assets/email.png"
 import passwordImg from "../../assets/padlock.png"
 import phoneImg from "../../assets/phone.png"
-export default function Form() {
+export default function Card() {
   return (
     <div>
     <div style={styles.centerForm}>
@@ -65,9 +64,9 @@ export default function Form() {
 
     </div>
     </div>
-<div>
-  <Link to={"/card"}></Link>
-</div>
+    {<div>
+        <button style={styles.submitButton}>Submit</button>
+     </div> }
     
     </div>
     

@@ -1,10 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import Form from './components/form';
+// import Form from './components/form';
+import Router from './navigation/router';
 function App() {
   return (
     <div className="App">
-  <Form />
+  {/* <Form /> */}
+  <Router />
     </div>
   );
 }
