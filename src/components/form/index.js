@@ -7,7 +7,7 @@ import userIcon from "../../assets/user.png";
 import emailImg from "../../assets/email.png";
 import passwordImg from "../../assets/padlock.png";
 import phoneImg from "../../assets/phone.png";
-
+// import backgroundImg from "../../assets/bg.jpg";
 export default function Form() {
   const [name, setName] = useState();
   const [phoneNumber, setPhoneNumber] = useState();
@@ -30,7 +30,7 @@ export default function Form() {
   }
 
   return (
-    <div>
+    <div style={styles.backgroundImage}>
       <div style={styles.centerForm}>
         <div style={styles.formHeading}>
           <form>

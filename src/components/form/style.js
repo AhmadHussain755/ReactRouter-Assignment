@@ -2,10 +2,10 @@ export const styles = {
   formHeading: {
     backgroundColor: "purple",
     maxWidth: "500px",
-    height: 280,
-    paddingLeft: 50,
-    paddingRight: 50,
-    paddingTop: 10,
+    height: 300,
+    paddingLeft: 100,
+    paddingRight: 100,
+    paddingTop: 20,
   },
   name: {
     width: 300,
@@ -51,7 +51,13 @@ export const styles = {
   centerForm: {
     display: "flex",
     justifyContent: "center",
-    marginTop: 100,
-    
+    paddingTop: 100
+  },
+  backgroundImage: {
+    backgroundImage:
+      "url('https://www.popsci.com/uploads/2020/06/05/3NIEQB3SFVCMNHH6MHZ42FO6PA.jpg?auto=webp')",
+      height: "100vh",
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "cover"
   },
 };
