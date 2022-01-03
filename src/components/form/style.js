@@ -6,17 +6,16 @@ export const styles = {
     paddingLeft: 50,
     paddingRight: 50,
     paddingTop: 10,
-  
   },
   name: {
     width: 300,
     height: 30,
-    border: "none"
+    border: "none",
   },
   namePadding: {
     paddingTop: 15,
     display: "flex",
-    justifyContent: "center"
+    justifyContent: "center",
   },
 
   email: {
@@ -24,34 +23,35 @@ export const styles = {
     height: 30,
   },
   userIconImg: {
-      width: 15,
-      height: 15,
-      paddingTop: 7
-      
+    width: 15,
+    height: 15,
+    paddingTop: 7,
   },
   nameImg: {
-      backgroundColor: "white",
-      maxWidth: "100px",
-      height: 33,
-      borderStyle: "none"
+    backgroundColor: "white",
+    maxWidth: "100px",
+    height: 33,
+    borderStyle: "none",
   },
   flexImg: {
-      display: "flex",
-      justifyContent: "center",
-
+    display: "flex",
+    justifyContent: "center",
   },
-  boardHeading:{
+  boardHeading: {
     color: "white",
   },
   submitButton: {
     backgroundColor: "purple",
     color: "white",
-    marginTop: "10px",
-  
+  },
+  buttonDiv: {
+    marginTop: 10,
   },
 
-  centerForm:{
+  centerForm: {
     display: "flex",
-    justifyContent: "center"
-  }
+    justifyContent: "center",
+    marginTop: 100,
+    
+  },
 };

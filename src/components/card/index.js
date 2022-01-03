@@ -1,74 +1,32 @@
 import { styles } from "./style";
+import { Link, useLocation } from "react-router-dom";
 // import { Label } from "reactstrap";
 import userIcon from "../../assets/user.png";
-import emailImg from "../../assets/email.png"
-import passwordImg from "../../assets/padlock.png"
-import phoneImg from "../../assets/phone.png"
-export default function Card() {
+import emailImg from "../../assets/email.png";
+import passwordImg from "../../assets/padlock.png";
+import phoneImg from "../../assets/phone.png";
+
+export default function Card(props) {
+  const location = useLocation();
+  console.log("location", location.state);
+
   return (
     <div>
-    <div style={styles.centerForm}>
-    <div style={styles.formHeading}>
-      <form>
+      <p>{location.state.name}</p>
+      <div>
         <div>
-          <h1 style={styles.boardHeading}>On Board</h1>
+          <p>{location.state.number}</p>
         </div>
-        <div style={styles.flexImg}>
-          <div style={styles.nameImg}>
-            <img src={userIcon} style={styles.userIconImg} />
-          </div>
-          <div>
-            <input type={"text"} placeholder="Name" style={styles.name}></input>
-          </div>
+        <div>
+          <p>{location.state.email}</p>
         </div>
-
-        <div style={styles.namePadding}>
-        <div style={styles.nameImg}>
-          <img src={ phoneImg } style={styles.userIconImg} />
-          </div>
-          <div>
-          <input
-            type={"number"}
-            placeholder="Phone Number"
-            style={styles.name}
-          ></input>
-          </div>
+        <div>
+          <p>{location.state.password}</p>
         </div>
-        
-        <div style={styles.namePadding}>
-        <div style={styles.nameImg}>
-          <img src={ emailImg } style={styles.userIconImg} />
-          </div>
-          <div>
-          <input
-            type={"email"}
-            placeholder="email"
-            style={styles.email}
-          ></input>
-          </div>
+        <div>
+          <Link to={"/"}>Back</Link>
         </div>
-
-        <div style={styles.namePadding}>
-        <div style={styles.nameImg}>
-          <img src={ passwordImg } style={styles.userIconImg} />
-          </div>
-          <div>
-          <input
-            type={"password"}
-            placeholder="Password"
-            style={styles.name}
-          ></input>
-          </div>
-        </div>
-      </form>
-
+      </div>
     </div>
-    </div>
-    {<div>
-        <button style={styles.submitButton}>Submit</button>
-     </div> }
-    
-    </div>
-    
   );
 }
