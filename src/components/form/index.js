@@ -2,16 +2,15 @@ import { useState } from "react";
 
 import { styles } from "./style";
 import { Link } from "react-router-dom";
-// import { Label } from "reactstrap";
 import userIcon from "../../assets/user.png";
 import emailImg from "../../assets/email.png";
 import passwordImg from "../../assets/padlock.png";
 import phoneImg from "../../assets/phone.png";
-// import backgroundImg from "../../assets/bg.jpg";
+
 export default function Form() {
   const [name, setName] = useState();
   const [phoneNumber, setPhoneNumber] = useState();
-  const [email, setEmail] = useState("");
+  const [email, setEmail] = useState();
   const [password, setPassword] = useState();
 
   function getNameValue(event) {
@@ -47,7 +46,8 @@ export default function Form() {
                   onChange={getNameValue}
                   placeholder="Name"
                   style={styles.name}
-                ></input>
+                  required
+                />
               </div>
             </div>
 
@@ -61,12 +61,13 @@ export default function Form() {
                   onChange={getPhoneNumberValue}
                   placeholder="Phone Number"
                   style={styles.name}
-                ></input>
+                  required
+                />
               </div>
             </div>
 
             <div style={styles.namePadding}>
-              <div style={styles.nameImg}>
+              <div style={styles.emailImage}>
                 <img src={emailImg} style={styles.userIconImg} />
               </div>
               <div>
@@ -75,7 +76,8 @@ export default function Form() {
                   onChange={getEmailValue}
                   placeholder="email"
                   style={styles.email}
-                ></input>
+                  required
+                />
               </div>
             </div>
 
@@ -89,7 +91,8 @@ export default function Form() {
                   onChange={getPasswordValue}
                   placeholder="Password"
                   style={styles.name}
-                ></input>
+                  required
+                />
               </div>
             </div>
           </form>

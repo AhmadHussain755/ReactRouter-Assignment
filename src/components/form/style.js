@@ -6,6 +6,7 @@ export const styles = {
     paddingLeft: 100,
     paddingRight: 100,
     paddingTop: 20,
+    opacity: .6
   },
   name: {
     width: 300,
@@ -30,8 +31,9 @@ export const styles = {
   nameImg: {
     backgroundColor: "white",
     maxWidth: "100px",
-    height: 33,
+    height: 32,
     borderStyle: "none",
+   
   },
   flexImg: {
     display: "flex",
@@ -39,13 +41,21 @@ export const styles = {
   },
   boardHeading: {
     color: "white",
+
   },
   submitButton: {
     backgroundColor: "purple",
     color: "white",
+    opacity: .8,
+    paddingLeft: 130,
+    paddingRight: 130,
+    paddingTop: 8,
+    paddingBottom: 8,
+    borderRadius: 50
+    
   },
   buttonDiv: {
-    marginTop: 10,
+    marginTop: 20,
   },
 
   centerForm: {
@@ -60,4 +70,12 @@ export const styles = {
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover"
   },
+  emailImage: {
+    width: 15,
+    height: 28,
+    paddingTop: 7,
+    backgroundColor: "white",
+    paddingLeft: 2,
+    paddingRight: 2
+  }
 };

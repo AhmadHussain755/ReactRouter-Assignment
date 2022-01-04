@@ -1,22 +1,26 @@
 export const styles = {
   components: {
     backgroundColor: "black",
-    opacity: 500,
+    opacity: .7,
     Width: "500px",
     color: "white",
     borderRadius: 20,
-    padding: 40
+    padding: 40,
+    fontSize: 25
   },
   linkButton: {
     backgroundColor: "black",
     color: "white",
     padding: 10,
     borderRadius: 20,
+    marginRight:"15%",
+   paddingLeft: 100,
+   paddingRight: 100,
   },
   boxCenter: {
     display: "flex",
     justifyContent: "center",
-    paddingTop: 150,
+    paddingTop: 85,
   },
   buttonMargin: {
     paddingTop: 30,
@@ -24,19 +28,19 @@ export const styles = {
   },
   backgroundImage: {
     backgroundImage:
-      "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjxOBfqsk0VpQlcK3V9iSu8MPVTjXDp03M-w&usqp=CAU')",
-    maxWidth: 500,
- 
+      "url('https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg')",
+    width: "50%",
+    height: 500,
+    backgroundRepeat: "no-repeat",
+    borderRadius: 100
   },
-  imageCenter:{
-//  display: "flex",
-//   justifyContent: "center",
-//   alignItem: "center", 
-// backgroundColor: "red",
-Width: "100%",
-margin: "auto",
-textAlign: "center"
-
-      
-  }
+  imageCenter: {
+    display: "flex",
+    justifyContent: "center",
+    // alignItem: "center",
+    maxwidth: 500,
+    margin: "auto",
+    textAlign: "center",
+    paddingTop: 150
+  },
 };
